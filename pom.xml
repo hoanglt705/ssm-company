@@ -3,13 +3,13 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ssm-service</groupId>
-    <artifactId>ssm-service</artifactId>
+    <groupId>ssm</groupId>
+    <artifactId>ssm-company</artifactId>
     <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <name>ssm-service</name>
+    <version>0.1</version>
+    <name>ssm-company</name>
     <build>
-        <finalName>ssm-service</finalName>
+        <finalName>ssm-company</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
