@@ -1,0 +1,16 @@
+public class TextDataExtractApplication extends ResourceConfig
+{
+	/**
+	 * The contructor
+	 */
+	public TextDataExtractApplication()
+	{
+		packages(FileExtractEndpoint.class.getPackage().getName(), FileStorageNotAvailableExceptionMapper.class.getPackage().getName());
+
+		// For some reason the jackson feature doesn't cut it
+		// http://stackoverflow.com/questions/18872931/custom-objectmapper-with-jersey-2-2-and-jackson-2-1
+		// register(JacksonFeature.class);
+
+		register(MarshallingFeature.class);
+	}
+}
